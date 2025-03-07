@@ -1,0 +1,86 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: url('ruta-de-tu-imagen-de-fondo.jpg'); /* Imagen de fondo */
+    background-size: cover;
+    color: #fff;
+}
+
+header {
+    text-align: center;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+h1 {
+    font-size: 3em;
+    color: #ffcc00;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.contenido {
+    text-align: center;
+    margin-top: 50px;
+}
+
+h2 {
+    font-size: 2.5em;
+    color: #ff6699;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.canciones {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.cancion {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+}
+
+.imagen-album {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.imagen-album:hover {
+    transform: scale(1.1); /* Efecto hover para que la imagen crezca */
+}
+
+.info-cancion h3 {
+    font-size: 1.5em;
+    color: #ffcc00;
+    margin: 10px 0;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.info-cancion h3:hover {
+    color: #ff6699; /* Cambio de color al pasar el mouse */
+}
+
+.info-cancion p {
+    font-size: 1.2em;
+    color: #ccc;
+}
+
+footer {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ccc;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

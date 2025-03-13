@@ -1,0 +1,71 @@
+/* Fondo de pantalla completa */
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('fondo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: white;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+/* Formulario encima de la imagen */
+.container {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+    width: 350px;
+    text-align: center;
+}
+/* Estilos para inputs y botones */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, button {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    background: linear-gradient(45deg, #ff512f, #dd2476);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.ver-reservas {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px;
+    text-decoration: none;
+    background: #007bff;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Animación de aparición */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
